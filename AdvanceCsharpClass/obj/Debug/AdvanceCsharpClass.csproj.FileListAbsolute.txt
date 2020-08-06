@@ -1,0 +1,7 @@
+C:\Users\PrimatusTech 001\source\repos\AdvanceCsharpClass\AdvanceCsharpClass\bin\Debug\AdvanceCsharpClass.exe.config
+C:\Users\PrimatusTech 001\source\repos\AdvanceCsharpClass\AdvanceCsharpClass\bin\Debug\AdvanceCsharpClass.exe
+C:\Users\PrimatusTech 001\source\repos\AdvanceCsharpClass\AdvanceCsharpClass\bin\Debug\AdvanceCsharpClass.pdb
+C:\Users\PrimatusTech 001\source\repos\AdvanceCsharpClass\AdvanceCsharpClass\obj\Debug\AdvanceCsharpClass.csprojAssemblyReference.cache
+C:\Users\PrimatusTech 001\source\repos\AdvanceCsharpClass\AdvanceCsharpClass\obj\Debug\AdvanceCsharpClass.csproj.CoreCompileInputs.cache
+C:\Users\PrimatusTech 001\source\repos\AdvanceCsharpClass\AdvanceCsharpClass\obj\Debug\AdvanceCsharpClass.exe
+C:\Users\PrimatusTech 001\source\repos\AdvanceCsharpClass\AdvanceCsharpClass\obj\Debug\AdvanceCsharpClass.pdb
