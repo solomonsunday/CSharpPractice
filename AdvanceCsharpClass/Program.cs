@@ -58,46 +58,51 @@ namespace AdvanceCsharpClass
             //Coffee Purcharse Program
 
             int TotalCoffeeCost = 0;
-
-            Start:
-            Console.WriteLine("Please Select Your Coffie Size: 1 - Small, 2 -Medium, 3 -Large");
-            int UserChoice =int.Parse(Console.ReadLine());
+            string UserDecision = string.Empty;
 
 
-            switch (UserChoice)
+            do
             {
-                case 1:
-                    TotalCoffeeCost += 1;
-                    break;
-                case 2:
-                    TotalCoffeeCost += 2;
-                    break;
-                case 3:
-                    TotalCoffeeCost += 3;
-                    break;
+                int UserChoice = -1;
+                do
+                {
+                    Console.WriteLine("Please Select Your Coffie Size: 1 - Small, 2 -Medium, 3 -Large");
+                    UserChoice = int.Parse(Console.ReadLine());
 
-                default:
-                    Console.WriteLine("Your Choice {0} is invalid" , UserChoice);
-                    goto Start;
+                    switch (UserChoice)
+                    {
+                        case 1:
+                            TotalCoffeeCost += 1;
+                            break;
+                        case 2:
+                            TotalCoffeeCost += 2;
+                            break;
+                        case 3:
+                            TotalCoffeeCost += 3;
+                            break;
+
+                        default:
+                            Console.WriteLine("Your Choice {0} is invalid", UserChoice);
+                            break;
+                    }
+                } while (UserChoice != 1 && UserChoice != 2 && UserChoice != 3);
+                do
+                {
+                    Console.WriteLine("Do you want buy another coffee - Yes or No?");
+
+                    UserDecision = Console.ReadLine().ToUpper();
+                    if (UserDecision != "YES" && UserDecision != "NO")
+                    {
+                        Console.WriteLine("You Choice {0} is Invalid. Please Try Again... ", UserDecision);
+                    }
+                } while (UserDecision != "YES" && UserDecision != "NO");
 
             }
-        Decide:
-            Console.WriteLine("Do you want buy another coffee - Yes or No?");
-            string UserDecision = Console.ReadLine();
+            while (UserDecision.ToUpper() != "NO");
 
-            switch (UserDecision.ToUpper())
-            {
-                case "YES":
-                    goto Start;
-                case "NO":
-                    break;
 
-                default:
-                    Console.WriteLine("Your Choice {0}, Is Invalid. Please Try Again ", UserDecision);
-                    goto Decide;
-            }
-
-            
+            Console.WriteLine("Thank You For Shopping with Us");
+            Console.WriteLine("Bill Amount = {0}", TotalCoffeeCost);            
 
         }
     }
