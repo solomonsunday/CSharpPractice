@@ -8,7 +8,7 @@ namespace AdvanceCsharpClass
 {
     public class Program
     {
-        
+
         static void Main(string[] args)
         {
 
@@ -59,9 +59,9 @@ namespace AdvanceCsharpClass
 
             int TotalCoffeeCost = 0;
 
-            Start:
+        Start:
             Console.WriteLine("Please Select Your Coffie Size: 1 - Small, 2 -Medium, 3 -Large");
-            int UserChoice =int.Parse(Console.ReadLine());
+            int UserChoice = int.Parse(Console.ReadLine());
 
 
             switch (UserChoice)
@@ -77,7 +77,7 @@ namespace AdvanceCsharpClass
                     break;
 
                 default:
-                    Console.WriteLine("Your Choice {0} is invalid" , UserChoice);
+                    Console.WriteLine("Your Choice {0} is invalid", UserChoice);
                     goto Start;
 
             }
@@ -91,13 +91,13 @@ namespace AdvanceCsharpClass
                     goto Start;
                 case "NO":
                     break;
-
                 default:
-                    Console.WriteLine("Your Choice {0}, Is Invalid. Please Try Again ", UserDecision);
+                    Console.WriteLine("Your Choice {0}, Is Invalid. Please Try Again... ", UserDecision);
                     goto Decide;
             }
 
-            
+            Console.WriteLine("Thank You For Shopping With US");
+            Console.WriteLine("Bill Amount = {0}", TotalCoffeeCost);
 
         }
     }
